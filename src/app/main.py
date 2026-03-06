@@ -17,7 +17,6 @@ from app.routes.v1 import example_one, items, users
 async def lifespan(app: FastAPI):
     # 🚀 Startup logic
     create_database_if_not_exists()
-    # create_tables(engine)
     print("✅ DB initialized")
 
     yield
